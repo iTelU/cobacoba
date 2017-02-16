@@ -10,6 +10,12 @@
 
     tools:context="com.kelompok5.itelu.MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/itelu"
+        />
+
     <TextView
     android:layout_width="wrap_content"
     android:text="Username"
