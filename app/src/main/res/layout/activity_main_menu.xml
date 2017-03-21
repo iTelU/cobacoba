@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jefrijakhel.apps.itelu.MainMenu">
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMenuHome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMenuTimeline"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp" />
+
+    <Button
+        android:text="Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMenuSetting"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dip"
+        android:layout_alignBottom="@+id/btnKost"
+        android:layout_alignLeft="@+id/btnMenuSetting"
+        android:layout_alignStart="@+id/btnMenuSetting"
+        android:id="@+id/btnRestaurant"
+        android:background="@mipmap/rastaurant" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dip"
+        android:layout_below="@+id/btnKost"
+        android:layout_alignLeft="@+id/btnKost"
+        android:layout_alignStart="@+id/btnKost"
+        android:layout_marginTop="102dp"
+        android:id="@+id/btnLaundry"
+        android:background="@mipmap/laundry" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dip"
+        android:layout_alignBottom="@+id/btnLaundry"
+        android:layout_alignLeft="@+id/btnRestaurant"
+        android:layout_alignStart="@+id/btnRestaurant"
+        android:id="@+id/btnPemesanan"
+        android:background="@mipmap/pemesanan" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/btnKost"
+        android:background="@mipmap/kost"
+        android:layout_height="75dip"
+        android:layout_below="@+id/btnMenuTimeline"
+        android:layout_toLeftOf="@+id/btnMenuHome"
+        android:layout_toStartOf="@+id/btnMenuHome" />
+
+    <TextView
+        android:text="Find A Kost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnKost"
+        android:layout_alignLeft="@+id/btnKost"
+        android:layout_alignStart="@+id/btnKost"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/txtKost" />
+
+    <TextView
+        android:text="Find A Restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRestaurant"
+        android:layout_alignBaseline="@+id/txtKost"
+        android:layout_alignBottom="@+id/txtKost"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="43dp"
+        android:layout_marginEnd="43dp" />
+
+    <TextView
+        android:text="Pemesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPemesanan"
+        android:layout_alignBaseline="@+id/txtLaundry"
+        android:layout_alignBottom="@+id/txtLaundry"
+        android:layout_toRightOf="@+id/btnMenuHome"
+        android:layout_toEndOf="@+id/btnMenuHome" />
+
+    <TextView
+        android:text="Find A Laundry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/txtLaundry"
+        android:layout_below="@+id/btnLaundry"
+        android:layout_alignLeft="@+id/btnLaundry"
+        android:layout_alignStart="@+id/btnLaundry" />
+</RelativeLayout>
