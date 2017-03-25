@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menuresto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jefrijakhel.apps.itelu.menuresto">
+
+    <Button
+        android:text="RESTO 2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/button2"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="RESTO 4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/button4"
+        android:textSize="24sp"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="42dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/rastaurant"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:text="RESTO 1"
+        android:layout_height="50dp"
+        android:id="@+id/button"
+        android:textSize="24sp"
+        android:layout_width="250dp"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <TextView
+        android:text="Sort by"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <Button
+        android:text="RESTO 3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/button3"
+        android:textSize="24sp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <TextView
+        android:text="RESTAURANT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+</RelativeLayout>

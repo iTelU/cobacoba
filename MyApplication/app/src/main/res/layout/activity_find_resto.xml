@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_resto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jefrijakhel.apps.itelu.FindResto">
+
+    <ImageView
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        app:srcCompat="@mipmap/rastaurant"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageViewResto" />
+
+    <TextView
+        android:text="Restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewResto"
+        android:layout_toRightOf="@+id/imageViewResto"
+        android:layout_toEndOf="@+id/imageViewResto"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/titleResto"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:layout_width="300dip"
+        android:layout_height="200dip"
+        app:srcCompat="@mipmap/mapss"
+        android:layout_below="@+id/imageViewResto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/imageViewMapss"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonMenu"
+        android:layout_height="35dip"
+        android:layout_below="@+id/imageViewMapss"
+        android:layout_alignRight="@+id/titleResto"
+        android:layout_alignEnd="@+id/titleResto" />
+
+    <TextView
+        android:text="Deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDesk"
+        android:layout_alignBaseline="@+id/buttonMenu"
+        android:layout_alignBottom="@+id/buttonMenu"
+        android:layout_alignRight="@+id/imageViewResto"
+        android:layout_alignEnd="@+id/imageViewResto" />
+
+    <TextView
+        android:text="No. Telfon:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonMenu"
+        android:layout_alignLeft="@+id/textViewDesk"
+        android:layout_alignStart="@+id/textViewDesk"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textViewDesk1" />
+
+    <TextView
+        android:text="Buka : 08.00 - 22.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDesk1"
+        android:layout_alignLeft="@+id/textViewDesk1"
+        android:layout_alignStart="@+id/textViewDesk1"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textViewDesk2" />
+
+    <TextView
+        android:text="Menjual ayam bakar yang ..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDesk2"
+        android:layout_alignLeft="@+id/textViewDesk2"
+        android:layout_alignStart="@+id/textViewDesk2"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewDesk3" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBarResto"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ratingBarResto"
+        android:layout_alignLeft="@+id/textViewDesk3"
+        android:layout_alignStart="@+id/textViewDesk3"
+        android:id="@+id/titleRating" />
+
+</RelativeLayout>
