@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Keranjang Makanan & Minuman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvKeranjangMakanan"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:id="@+id/lvListMakanan"
+        android:layout_weight="0.54" />
+
+    <TextView
+        android:text="Nama Pemesan :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNamaPemesan"
+        android:textSize="20sp"
+        android:layout_weight="0.10" />
+
+    <TextView
+        android:text="Alamat :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAlamatPemesan"
+        android:textSize="20sp"
+        android:layout_weight="0.37" />
+
+    <Button
+        android:text="Kirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKirimPesanan" />
+
+
+</LinearLayout>
